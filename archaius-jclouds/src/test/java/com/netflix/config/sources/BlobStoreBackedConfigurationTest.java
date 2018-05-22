@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.netflix.config.sources;
+package com.netflix.proplog.config.sources;
 
 import static org.junit.Assert.assertEquals;
 
@@ -27,12 +27,12 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.google.common.collect.ImmutableMap;
-import com.netflix.config.ConfigurationManager;
-import com.netflix.config.DynamicConfiguration;
-import com.netflix.config.DynamicPropertyFactory;
-import com.netflix.config.DynamicStringProperty;
-import com.netflix.config.FixedDelayPollingScheduler;
-import com.netflix.config.PollResult;
+import com.netflix.proplog.config.ConfigurationManager;
+import com.netflix.proplog.config.DynamicConfiguration;
+import com.netflix.proplog.config.DynamicPropertyFactory;
+import com.netflix.proplog.config.DynamicStringProperty;
+import com.netflix.proplog.config.FixedDelayPollingScheduler;
+import com.netflix.proplog.config.PollResult;
 
 /**
  *
@@ -60,7 +60,7 @@ public class BlobStoreBackedConfigurationTest {
    @BeforeClass
    public static void setUpClass() {
       ctx = ContextBuilder.newBuilder("transient").buildView(BlobStoreContext.class);
-      System.setProperty("com.netflix.config.blobstore.containerName", DEFAULT_CONTAINER);
+      System.setProperty("com.netflix.proplog.config.blobstore.containerName", DEFAULT_CONTAINER);
       ctx.getBlobStore().createContainerInLocation(null, DEFAULT_CONTAINER);
    }
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.netflix.config.sources;
+package com.netflix.proplog.config.sources;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
@@ -35,10 +35,10 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps.EntryTransformer;
-import com.netflix.config.DynamicPropertyFactory;
-import com.netflix.config.DynamicStringProperty;
-import com.netflix.config.PollResult;
-import com.netflix.config.PolledConfigurationSource;
+import com.netflix.proplog.config.DynamicPropertyFactory;
+import com.netflix.proplog.config.DynamicStringProperty;
+import com.netflix.proplog.config.PollResult;
+import com.netflix.proplog.config.PolledConfigurationSource;
 
 /**
  * {@link PolledConfigurationSource} backed by any supported jclouds
@@ -47,7 +47,7 @@ import com.netflix.config.PolledConfigurationSource;
  * <h3>Storage</h3>
  *
  * Config entries are stored in a container configured by the
- * property {@code com.netflix.config.blobstore.containerName}, defaulted to
+ * property {@code com.netflix.proplog.config.blobstore.containerName}, defaulted to
  * {@code archaiusProperties}.
  *
  * <h3>Connection</h3>
@@ -90,7 +90,7 @@ public class BlobStoreConfigurationSource implements PolledConfigurationSource {
    private static final Logger log = LoggerFactory.getLogger(BlobStoreConfigurationSource.class);
 
    private DynamicStringProperty containerName = DynamicPropertyFactory.getInstance().getStringProperty(
-         "com.netflix.config.blobstore.containerName", "archaiusProperties");
+         "com.netflix.proplog.config.blobstore.containerName", "archaiusProperties");
 
    private final BlobStoreContext ctx;
 

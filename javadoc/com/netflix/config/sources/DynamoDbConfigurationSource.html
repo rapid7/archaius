@@ -55,7 +55,7 @@ function windowTitle()
 <TR>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;PREV CLASS&nbsp;
-&nbsp;<A HREF="../../../../com/netflix/config/sources/JDBCConfigurationSource.html" title="class in com.netflix.config.sources"><B>NEXT CLASS</B></A></FONT></TD>
+&nbsp;<A HREF="../../../../com/netflix/config/sources/JDBCConfigurationSource.html" title="class in com.netflix.proplog.config.sources"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
   <A HREF="../../../../index.html?com/netflix/config/sources/DynamoDbConfigurationSource.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="DynamoDbConfigurationSource.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
@@ -87,19 +87,19 @@ DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&n
 <!-- ======== START OF CLASS DATA ======== -->
 <H2>
 <FONT SIZE="-1">
-com.netflix.config.sources</FONT>
+com.netflix.proplog.config.sources</FONT>
 <BR>
 Class DynamoDbConfigurationSource</H2>
 <PRE>
 java.lang.Object
-  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>com.netflix.config.sources.DynamoDbConfigurationSource</B>
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>DynamoDbConfigurationSource</B>
 </PRE>
 <DL>
-<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../com/netflix/config/PolledConfigurationSource.html" title="interface in com.netflix.config">PolledConfigurationSource</A></DD>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../com/netflix/config/PolledConfigurationSource.html" title="interface in com.netflix.proplog.config">PolledConfigurationSource</A></DD>
 </DL>
 <HR>
 <DL>
-<DT><PRE>public class <B>DynamoDbConfigurationSource</B><DT>extends java.lang.Object<DT>implements <A HREF="../../../../com/netflix/config/PolledConfigurationSource.html" title="interface in com.netflix.config">PolledConfigurationSource</A></DL>
+<DT><PRE>public class <B>DynamoDbConfigurationSource</B><DT>extends java.lang.Object<DT>implements <A HREF="../../../../com/netflix/config/PolledConfigurationSource.html" title="interface in com.netflix.proplog.config">PolledConfigurationSource</A></DL>
 </PRE>
 
 <P>
@@ -150,7 +150,7 @@ User: gorzell
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../com/netflix/config/PollResult.html" title="class in com.netflix.config">PollResult</A></CODE></FONT></TD>
+<CODE>&nbsp;<A HREF="../../../../com/netflix/config/PollResult.html" title="class in com.netflix.proplog.config">PollResult</A></CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../com/netflix/config/sources/DynamoDbConfigurationSource.html#poll(boolean, java.lang.Object)">poll</A></B>(boolean&nbsp;initial,
      java.lang.Object&nbsp;checkPoint)</CODE>
 
@@ -216,7 +216,7 @@ public <B>DynamoDbConfigurationSource</B>(com.amazonaws.services.dynamodb.Amazon
 <A NAME="poll(boolean, java.lang.Object)"><!-- --></A><H3>
 poll</H3>
 <PRE>
-public <A HREF="../../../../com/netflix/config/PollResult.html" title="class in com.netflix.config">PollResult</A> <B>poll</B>(boolean&nbsp;initial,
+public <A HREF="../../../../com/netflix/config/PollResult.html" title="class in com.netflix.proplog.config">PollResult</A> <B>poll</B>(boolean&nbsp;initial,
                        java.lang.Object&nbsp;checkPoint)
                 throws java.lang.Exception</PRE>
 <DL>
@@ -224,7 +224,7 @@ public <A HREF="../../../../com/netflix/config/PollResult.html" title="class in 
 <DD>Poll the configuration source to get the latest content.
 <P>
 <DD><DL>
-<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../com/netflix/config/PolledConfigurationSource.html#poll(boolean, java.lang.Object)">poll</A></CODE> in interface <CODE><A HREF="../../../../com/netflix/config/PolledConfigurationSource.html" title="interface in com.netflix.config">PolledConfigurationSource</A></CODE></DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../com/netflix/config/PolledConfigurationSource.html#poll(boolean, java.lang.Object)">poll</A></CODE> in interface <CODE><A HREF="../../../../com/netflix/config/PolledConfigurationSource.html" title="interface in com.netflix.proplog.config">PolledConfigurationSource</A></CODE></DL>
 </DD>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>initial</CODE> - true if this operation is the first poll.<DD><CODE>checkPoint</CODE> - Object that is used to determine the starting point if the result returned is incremental. 
@@ -265,7 +265,7 @@ public <A HREF="../../../../com/netflix/config/PollResult.html" title="class in 
 <TR>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;PREV CLASS&nbsp;
-&nbsp;<A HREF="../../../../com/netflix/config/sources/JDBCConfigurationSource.html" title="class in com.netflix.config.sources"><B>NEXT CLASS</B></A></FONT></TD>
+&nbsp;<A HREF="../../../../com/netflix/config/sources/JDBCConfigurationSource.html" title="class in com.netflix.proplog.config.sources"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
   <A HREF="../../../../index.html?com/netflix/config/sources/DynamoDbConfigurationSource.html" target="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="DynamoDbConfigurationSource.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;

@@ -27,7 +27,7 @@
            http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
 
-	<bean id="archaiusSampleLibrary" class="com.netflix.archaius.samplelibrary.SampleLibrary">
+	<bean id="archaiusSampleLibrary" class="com.netflix.proplog.archaius.samplelibrary.SampleLibrary">
 			<property name="name">
 				<value>${com.netflix.archaius.samplelibrary.SampleLibrary.name}</value>
 			</property>

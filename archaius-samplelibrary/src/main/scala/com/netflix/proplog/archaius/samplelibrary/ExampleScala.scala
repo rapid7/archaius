@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.netflix.archaius.samplelibrary
+package com.netflix.proplog.archaius.samplelibrary
 
 /**
  * User: gorzell

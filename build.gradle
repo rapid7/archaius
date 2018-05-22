@@ -21,7 +21,7 @@ subprojects {
         compile 'com.google.code.findbugs:jsr305:3.0.1'
         testCompile('log4j:log4j:1.2.16')
     }
-    group = "com.netflix.${githubProjectName}" 
+    group = "com.netflix.proplog.${githubProjectName}"
 
     tasks.withType(Test) { forkEvery = 1 }
     test {
